@@ -9,9 +9,9 @@
 </head>
 <body>
     <header class="header">
-        <img class="header__logo" src="imeges/logo.jpg" alt="logo">
+        <img class="header__logo" src="images/logo.jpg" alt="logo" width="200" height="150">
         <h1 class="header__title">Villa Serenità</h1>
-        <button class="header__button">Бронирование</button>
+        <a class="header__button" href="booking.html">Бронирование</a>
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item"> <a  class="nav__link" href="">номера и цены</a></li>
@@ -20,53 +20,70 @@
                 <li class="nav__item"><a class="nav__link" href="">контактная информация</a></li>
             </ul>
         </nav>
-        <video class="video">видео</video>
+        <video class="video" controls autoplay loop>
+        <source src="video/видео 1.mov" type="video/mov" alt="video" width="500" height="400"> 
+        </video> 
     </header>
     <main class="main">
         <section class="open">
             <h2 class="open__title">Знакомство с отелем</h2>
             <p class="open__text">В сердце живописной Итальянской Ривьеры расположился отель "Villa Serenità" — истинное воплощение роскоши и уюта, где каждый гость чувствует себя особенным. Этот очаровательный отель, утопающий в зелени экзотических растений и окруженный невероятными пейзажами, предлагает непревзойденный комфорт и незабываемый отдых. При входе в отель вас встречает величественная мраморная лестница, ведущая в шикарный вестибюль с высокими потолками и витражными окнами, сквозь которые мягко просачивается солнечный свет. Интерьеры отеля оформлены в стиле тосканской классики, сочетая традиционные элементы с современными акцентами. В каждом уголке — живописные картины, изысканные люстры и мягкие мебельные гарнитуры, создающие атмосферу уюта и благородства. Номера отеля "Villa Serenità" — это настоящие оазисы комфорта. Каждый номер оборудован балконом с видом на лазурное море или зелёные холмы, а роскошные ванные комнаты, отделанные мрамором, предлагают спа-процедуры, которые позволят расслабиться и насладиться временем, проведённым вдали от городской суеты. Гостям предлагается расслабляющий спа. В ресторане, расположенном на террасе с панорамным видом, шеф-повар предлагает неповторимую кухню, основанную на рецептах местной традиционной кулинарии, включая свежие морепродукты и местные вина. Отель "Villa Serenità" — это не просто место для проживания, это целый мир, в который хочется возвращаться вновь и вновь. Здесь время останавливается, а каждый момент наполнен гармонией и удовольствием.</p>
-            <img class="open__img" src="images/hotel-main-575.jpg" alt="Отель" width="300" height="250">
+            <img class="open__img" src="images/discription-hotel.jpg" alt="discription-hotel" width="300" height="250">
         </section>
         <section class="menu">
             <h3 class="menu__title">Проживание</h3>
-                    <div class="namber">
-                        <a class="namber__link" href=""><img class="namber__icon" src="icon.png" alt="эконом"></a>
-                        <a class="namber__link" href=""><img class="namber__icon" src="icon.png" alt="стандарт"></a>
-                        <a class="namber__link" href=""><img class="namber__icon" src="icon.png" alt="семейный"></a>
-                        <a class="namber__link" href=""><img class="namber__icon" src="icon.png" alt="студия"></a>
-                        <a class="namber__link" href=""><img class="namber__icon" src="icon.png" alt="номер люкс"></a>
+                    <div class="number">
+                        <a class="number__link" href="">
+                            <img class="number__icon" src="images/econom.jpg" alt="эконом"  width="300" height="250">
+                            <p class="info__room">номер категории-эконом</p>
+                        </a>
+                        <a class="number__link" href="">
+                            <img class="number__icon" src="images/standart.jpg" alt="стандарт" width="300" height="250">
+                            <p class="info__room">номер категории-стандарт</p>
+                        </a>
+                        <a class="number__link" href="">
+                            <img class="number__icon" src="images/family.jpg" alt="семейный" width="300" height="250">
+                            <p class="info__room">номер категории-семейный</p>
+                        </a>
+                        <a class="number__link" href="">
+                            <img class="number__icon" src="images/studio.jpg" alt="студия" width="300" height="250">
+                            <p class="info__room">номер категории-студия</p>
+                        </a>
+                        <a class="number__link" href="">
+                            <img class="number__icon" src="images/luxe.jpg" alt="номер люкс" width="300" height="250">
+                            <p class="info__room">номер категории-люкс</p>
+                        </a>
                     </div>
          </section>
          <section class="info">
-            <div class="places">
-                <img class="places__icon" src="icon.png" alt="фото мест">
-                <a class="places__link" href="https://italy-insider.ru/rome/dostoprimechatelnosti-rima">места, которые можно посетить в городе</a>
+            <div class="info__places">
+                <img class="info__icon" src="images/place.jpg" alt="фото мест" width="400" height="350">
+                <a class="info__link" href="https://italy-insider.ru/rome/dostoprimechatelnosti-rima">места, которые можно посетить в городе</a>
             </div>
-            <div class="excursion">
-                <img class="excursion__icon" src="icon.png" alt="фото экскурсии">
-                <a class="excursion__link" href="https://gid.italy4.me/rim/">экскурсии в городе</a>
+            <div class="info__places">
+                <img class="info__icon" src="images/excursions.jpg" alt="фото экскурсии" width="400" height="350">
+                <a class="info__link" href="https://gid.italy4.me/rim/">экскурсии в городе</a>
             </div>
-            <div class="restaurant">
-                <img class="restaurant__icon" src="icon.png" alt="фото ресторанов">
-                 <a class="restaurant__link" href="https://italy-insider.ru/rome/restoranyi-rima">рестораны, которые можно посетить</a>
+            <div class="info__places">
+                <img class="info__icon" src="images/restautant.jpg" alt="фото ресторанов" width="400" height="350">
+                 <a class="info__link" href="https://italy-insider.ru/rome/restoranyi-rima">рестораны, которые можно посетить</a>
             </div>
-            <div class="spa">
-                <img class="spa__icon" src="icon.png" alt="фото спа">
-                <a class="spa__link" href="https://italy-insider.ru/rome/dostoprimechatelnosti-rima">спа-комплекс</a>
+            <div class="info__places">
+                <img class="info__icon" src="images/spa.jpg" alt="фото спа" width="400" height="350">
+                <a class="info__link" href="https://italy-insider.ru/rome/dostoprimechatelnosti-rima">спа-комплекс</a>
             </div>
          </section>
     </main>
     <footer class="footer">
         <div class="info">
-            <p class="info__address">ООО"..." Физический адрес"</p>
+            <p class="info__address">ООО"..." Физический адрес</p>
             <p class="info__phone">номер телефона 66-66-66</p>
             <p class="info__mail">электронная почта</p>
         </div>
         <div class="socials">
             <h4 class="socials__title">социальные сети</h4>
-            <a class="social__link" href="https://www.instagram.com/dary_dolly_a?igsh=MXM1dnh5ZGw4Nnc5Nw=="><img class="social__icon" src="images/фото инст.jpg" alt="фото инст" width="250" height="250"></a>
-            <a class="social__link" href="https://www.instagram.com/nvllstt/profilecard/?igsh=MTd0bGp5eXRxNm5jZA"><img class="social__icon" src="images/фото инст.jpg" alt="фото инст" width="250" height="250"></a>
+            <a class="socials__link" href="https://www.instagram.com/dary_dolly_a?igsh=MXM1dnh5ZGw4Nnc5Nw=="><img class="socials__icon" src="images/inst.jpg" alt="фото инст" width="250" height="250"></a>
+            <a class="socials__link" href="https://www.instagram.com/nvllstt/profilecard/?igsh=MTd0bGp5eXRxNm5jZA"><img class="socials__icon" src="images/inst.jpg" alt="фото инст" width="250" height="250"></a>
         </div>
     </footer>
 </body>
