@@ -2,3 +2,45 @@
     background-color: rgb(215, 200, 228);
     color: rgb(65, 68, 68);
 }
+
+.nav__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+   
+.nav__link{
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgba(71, 16, 73, 0.801);
+    color: rgb(234, 226, 236);
+    text-decoration: none;
+}
+   
+.header__button{
+    display: inline-block;
+     padding: 10px;
+     margin: 5px;
+     background-color: rgba(199, 210, 211, 0.911);
+     color: rgb(61, 68, 66);
+     text-decoration: none;
+}
+
+.header__logo-wrap{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+}
+
+.header__logo-wrap{
+        text-decoration: none;
+        color: rgb(110, 124, 119);
+}
+
+.header__title{
+        margin: 0;
+}
+       
