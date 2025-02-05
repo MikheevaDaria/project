@@ -1,0 +1,12 @@
+.text-ex-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/discription-hotel.jpg); 
+    background-repeat: no-repeat; /* Фон не повторяется */
+    background-size: cover; /* Растягиваем  фон по высоте и ширине */
+    background-position: center; /* Позиция фона по центру */
+    /*height: 250px;  Высота блока */
+    color: #ffffff;
+    padding: 51px;
+  }

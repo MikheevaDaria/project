@@ -2,7 +2,9 @@
     background-color: rgb(215, 200, 228);
     color: rgb(65, 68, 68);
 }
-
+.nav {
+    font-size: 14px; 
+}
 .nav__list {
     margin: 0;
     padding: 0;
@@ -28,6 +30,13 @@
      color: rgb(61, 68, 66);
      text-decoration: none;
 }
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   }
 
 .header__logo-wrap{
         display: flex;
