@@ -1,6 +1,7 @@
-.header{
-    background-color: rgb(215, 200, 228);
-    color: rgb(65, 68, 68);
+.header,.header__container {
+    position: fixed;
+    width: 100%;
+    display: flex
 }
 .nav {
     font-size: 14px; 
@@ -17,7 +18,7 @@
     display: block;
     padding: 10px;
     margin: 5px;
-    background-color: rgba(71, 16, 73, 0.801);
+    background-color: rgba(59, 57, 59, 0.801);
     color: rgb(234, 226, 236);
     text-decoration: none;
 }
@@ -31,25 +32,115 @@
      text-decoration: none;
 }
 
-.header{
-    display: flex;
+.header {
+    color: rgb(var(--color-text-transparent));
+    height: auto;
     justify-content: space-between;
-    padding-top: 10px;
-    padding-bottom: 10px;
-   }
+    z-index: 10;
+    top: 0;
+    left: 0
+}
 
 .header__logo-wrap{
         display: flex;
         align-items: center;
         gap: 10px;
-}
-
-.header__logo-wrap{
+        display: flex;
+        position: relative;
+        z-index: 5;
+        height: 100%;
+        align-items: flex-start;
         text-decoration: none;
         color: rgb(110, 124, 119);
 }
-
-.header__title{
-        margin: 0;
+.logo__image {
+    width: 100%;
+    background: 0 0;
+    display: block;
+    z-index: 10;
+    margin: auto;
+    max-height: 100%;
+    max-width: 100%
 }
-       
+.header__content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%
+}
+.header__bar {
+    background-color: rgba(168, 160, 160, 0.849);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center
+}
+.header__title {
+    margin: 0;
+    font-size: 24px
+}
+
+.header__link {
+    text-decoration: none;
+    color: rgb(56, 54, 51);
+    font-family: 'Motserrat-Thin.ttf';
+    font-weight: 600;
+}
+.phone_header .phone__text {
+    font-size: 16px;
+    font-weight: 700;
+}
+.phone__text {
+    line-height: 20px;
+    margin-left: 15px;
+}
+.header__menu {
+    display: flex;
+    width: 100%;
+}
+.header__navigation {
+    flex: 1 1 auto;
+    position: relative;
+    background-color: rgba(145, 139, 139, 0.808);
+}
+.menu {
+    position: relative;
+    font-size: 14px;
+    width: 100%;
+}
+.menu__list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu__item {
+    flex: 1 1 auto;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+}
+.menu__link {
+    color: rgb(53, 51, 51);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 20px;
+}
+.button_menu {
+    background-color: rgb(82, 80, 80);
+    width: 120px;
+    display: none;
+}
+.button {
+    background-color: rgb(130, 133, 133);
+    color: rgb(var(--color-text-accented));
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+}

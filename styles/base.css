@@ -6,11 +6,10 @@
 
 html,
 body {
-    font-family: 'Montserrat', 'Arial', sans-serif;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 30px;
     color: #000000;
-    background-color: #ffffff;
+    background-color: #291d219e;
     overflow-x: hidden;
 }
 
