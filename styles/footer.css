@@ -1,4 +1,86 @@
 .footer{
-    background-color: rgb(215, 200, 228);
+    background-color: rgba(200, 197, 202, 0.829);
     color: rgb(65, 68, 68);
+}
+
+.footer__container{
+     max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+}
+
+.info__footer{
+    margin-bottom: 20px;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 100%;
+}
+
+.contacts__container {
+    max-width: 1180px;
+    color: inherit;
+    min-width: 320px;
+    margin: 0 auto;
+    position: relative;
+    padding: 50px 0;
+}
+
+.info__address {
+    margin-left: 15px;
+    line-height: 21px;
+}
+
+.contacts__item {
+    width: 363.3333333333px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info__address {
+    text-decoration: none;
+    display: flex;
+    cursor: pointer;
+    transition: color .2s ease;
+}
+
+.phone__item {
+    margin-bottom: 0;
+}
+
+.phone__icon {
+    color: rgb(63, 63, 61);
+    font-size: 24px;
+    margin-left: 2px;
+    align-self: baseline;
+}
+
+.info__phone {
+text-decoration: none;
+display: flex;
+align-items: center;
+transition: color .2s ease;
+}
+
+.massenger__list {
+    color: rgb(var(--color-bg-decor));
+    font-size: 24px;
+    margin-left: 2px;
+}
+
+.socials__link {
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: inherit;
+    line-height: 21px;
+    margin-left: 15px;
+}
+
+.info__mail {
+display: flex;
+line-height: 21px;
+margin-left: 15px;
 }

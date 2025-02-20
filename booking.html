@@ -3,30 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Villa Serenità, г. Милан - официальный сайт</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header class="header">
-        <img class="header__logo" src="images/logo.jpg" alt="logo" width="200" height="150">
-        <h1 class="header__title">Villa Serenità</h1>
-        <a class="header__button" href="booking.html">Бронирование</a>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"> <a  class="nav__link" href="">номера и цены</a></li>
-                <li class="nav__item"><a class="nav__link" href="">программа лояльности</a></li>
-                <li class="nav__item"><a class="nav__link" href="">эксклюзивное предложение</a></li>
-                <li class="nav__item"><a class="nav__link" href="">контактная информация</a></li>
-            </ul>
-        </nav>
-        <video class="video" controls autoplay loop>
-        <source src="video/видео 1.mov" type="video/mov" alt="video" width="500" height="400"> 
-        </video> 
+   <header class="">
+    <div class="header container">
+        <a class="header__logo-wrap" href="index.html">
+         <img class="logo__imege" src="images/logo.jpg" alt="logo" width="100" height="110">
+        </a>
+        <div class="header__content">
+            <div class="header__bar">
+                <div class="header__title">
+            <a href="index.html" class="header__link">Villa Serenità</a>
+                </div>
+                <div class="phone__header">
+                   <span class="phone__text">
+                    <b>8 987 725 59 87</b>
+                   </span>
+                </div>
+            </div>    
+            <div class="header__menu">
+                <div class="button button__menu">
+                </div>
+                <div class="header__navigation">
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li>
+                            <li class="menu__item menu__item">
+                                <a class="menu__link" href="booking.html">БРОНИРОВАНИЕ</a>
+                            </li>
+                    
+                            <li class="menu__item menu__item">
+                                <a class="menu__link" href="#rooms">НОМЕРА И ЦЕНЫ</a>
+                            </li>
+                        
+                            <li class="menu__item menu__item">
+                                <a class="menu__link" href="">ПРОГРАММА ЛОЯЛЬНОСТИ</a>
+                            </li>
+                        
+                            <li class="menu__item menu__item">
+                                <a class="menu__link" href="info0">СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ</a>
+                            </li>
+                    
+                            <li class="menu__item menu__item">
+                                <a class="menu__link" href="#footer">КОНТАКТЫ</a>
+                            </li>       
+
+                            <li class="menu__item menu__item">
+                                <a class="menu__link" href="registration.html">ВХОД И РЕГИСТРАЦИЯ</a>
+                            </li> 
+                            </li>
+                        </ul>
+                    </nav>
+            </div>
+        </div>
+    </div>
     </header>
     <main class="main">
-        
+        <img src="images/shapka.jpg" alt="фото под шапку"  width="1500" height="800">
+        <h2>Форма бронирования</h2>
+            <form id="bookingForm">
+                <label for="date">Дата бронирования:</label>
+                    <input type="date" id="date" name="date" required>
+
+                <label for="date">Дата выезда:</label>
+                    <input type="date__all" id="date__all" name="date__all" required>
+
+                <label for="time">Время бронирования:</label>
+                    <input type="time" id="time" name="time" required>
+
+                <label for="adults">Количество человек:</label>
+                    <input type="number" id="adults" name="adults" min="1" required>
+
+                <label for="children">Будут ли дети:</label>
+                    <select id="children" name="children">
+                <option value="yes">Да</option>
+                <option value="no">Нет</option>
+                    </select>
+
+        <button type="submit">Забронировать</button>
+            </form>
     </main>
+    <script>
+        document.getElementById('bookingForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const date = document.getElementById('date').value;
+            const date__all = document.getElementById('date__all').value;
+            const time = document.getElementById('time').value;
+            const adults = document.getElementById('adults').value;
+            const children = document.getElementById('children').value;
+    
+            alert(`Бронирование подтверждено!\\nДата: ${date}\\nДата выезда: ${date__all}\\nВремя: ${time}\\nКоличество человек: ${adults}\\nДети: ${children}`);
+        });
+    </script>    
     <footer class="footer">
         <div class="info">
             <p class="info__address">ООО"..." Физический адрес</p>
@@ -41,3 +113,15 @@
     </footer>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма бронирования отеля</title>
+</head>
+<body>
+
+
+

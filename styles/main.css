@@ -3,15 +3,127 @@
     text-align: justify;
     justify-content: left;
     align-items: center;
-    background: url("../images/discription-hotel 3.jpg"); 
+    background: url("../images/discription_hotel.jpg"); 
     background-repeat: no-repeat; /* Фон не повторяется */
     background-size: cover; /* Растягиваем  фон по высоте и ширине */
     background-position: center; /* Позиция фона по центру */
     /*height: 250px;  Высота блока */
-    color: #bdaeae98;
+    color: rgb(24, 23, 23);
     padding: 90px;
     font-family: 'Times New Roman', Times, serif;
   }
 .numbers{
   background-color: azure;
+}
+.room {
+  background-color: azure;
+  border-radius: 5px;
+  height: 320px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center
+}
+.rooms_style_complementary {
+  background-color: #a79ca082;
+  color: rgb(var(--color-text-additional))
+}
+.rooms__container {
+  max-width: 1180px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 52px 0;
+  text-align: center;
+  background-color: #291d2100;
+}
+.rooms__title {
+  color: rgba(33, 34, 34, 0.938);
+  text-align: left;
+  margin-bottom: 47px;
+  padding: 0 15px
+}
+.link {
+  color: rgb(var(--color-bg-buttons));
+  font-size: rgb(var(--font-size-content));
+  text-decoration: underline;
+}
+.link_unstyled {
+  color: inherit;
+  font-size: inherit;
+  text-decoration: inherit;
+}
+.body__label {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+}
+.label {
+  display: block;
+  margin: 10px 0 5px;
+}
+.input, select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.number {
+  background-color: #ccc;
+  display: flex;
+  gap: 10px;
+  color: black;
+  padding: 10px;
+}
+
+.number__icon {
+  object-fit: cover;
+  height: 100%;
+}
+
+.about__wrap-left {
+flex-shrink: 0;
+}
+
+.about__wrap-right {
+  flex-direction: column;
+  display: flex;
+  font-family: Arial, sans-serif;
+  background-color: rgba(126, 114, 109, 0.253);
+}
+
+.number__button {
+  display: block;
+ padding: 10px;
+ color: rgb(55, 56, 58);
+ background-color: rgba(114, 108, 108, 0.301);
+ text-decoration: none;
+ margin-top: auto;
+ margin-right: auto;
+}
+
+.info {
+display: flex;
+}
+
+.info__places {
+padding: 15px;
+background-color: #ccc;
+color: black;
+box-shadow: 1px 2px 20px 5px #d7d7d7d3;
+}
+
+.info__link {
+color: black;
+margin-top: 15px;
+ margin-bottom: 15px;
+ font-size: 20px;
+ font-weight: bold;
+ text-align: center;
+ display: block;
+ padding: 10px;
+ background-color: #ccc;
+ text-decoration: none;
+ text-align: center;
 }

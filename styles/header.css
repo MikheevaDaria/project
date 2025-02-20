@@ -94,6 +94,7 @@
 .phone__text {
     line-height: 20px;
     margin-left: 15px;
+    color: rgb(56, 54, 51);
 }
 .header__menu {
     display: flex;
