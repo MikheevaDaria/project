@@ -1,0 +1,52 @@
+/* Медиа-запрос для 1024px и выше */
+@media (min-width: 1024px) {
+    .container {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  
+    .content {
+      padding-right: 2em;
+    }
+  
+    .gallery img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  
+  
+  /* Медиа-запрос для 768px и выше */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    main {
+      flex-direction: row;
+    }
+  
+    .gallery img {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .container {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
+  
+  /* Медиа-запрос для экранов меньше 768px */
+  @media (max-width: 767px) {
+    .container {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  
+    .gallery img {
+      width: 100%;
+      height: auto;
+    }
+  
+    main {
+      flex-direction: column;
+    }
+  }

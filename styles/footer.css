@@ -77,7 +77,19 @@ transition: color .2s ease;
     color: inherit;
     line-height: 21px;
     margin-left: 15px;
+    transition: background-color 0.3s,
+    color 0.3s;
 }
+
+.socials__link:hover {
+    background-color: #6d696ca1;
+    color: #aca7a7c5;
+   }
+
+.socials__link:active {
+    background-color: #777277b4;
+    color: #868181c5;
+   }
 
 .info__mail {
 display: flex;

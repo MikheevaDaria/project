@@ -132,9 +132,20 @@
     justify-content: center;
     text-decoration: none;
     padding: 0 20px;
+    transition: background-color 0.3s,
+    color 0.3s;
 }
-.button_menu {
+
+.menu__link:hover {
+    background-color: #635d61;
+    color: #ffffffe8;
+   }
+.menu__link:active {
     background-color: rgb(82, 80, 80);
+    color: #ffffffd2;
+   }
+.button_menu {
+    background-color: rgb(122, 121, 121);
     width: 120px;
     display: none;
 }
