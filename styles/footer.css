@@ -13,10 +13,10 @@
 
 .info__footer{
     margin-bottom: 20px;
-    width: 300px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: flex-start;
+    align-items: start;
+    gap: 10px;
     max-width: 100%;
 }
 
@@ -35,16 +35,20 @@
 }
 
 .contacts__item {
-    width: 363.3333333333px;
+    width: 363px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
 }
+
 
 .info__address {
     text-decoration: none;
     display: flex;
     cursor: pointer;
     transition: color .2s ease;
+    margin: 0;
 }
 
 .phone__item {
@@ -73,12 +77,16 @@ transition: color .2s ease;
 
 .socials__link {
     margin-bottom: 5px;
-    text-decoration: none;
     color: inherit;
     line-height: 21px;
     margin-left: 15px;
     transition: background-color 0.3s,
     color 0.3s;
+    text-decoration: none;
+    display: flex;
+    cursor: pointer;
+    transition: color .2s ease;
+    margin: 0;
 }
 
 .socials__link:hover {
@@ -92,7 +100,11 @@ transition: color .2s ease;
    }
 
 .info__mail {
-display: flex;
-line-height: 21px;
-margin-left: 15px;
+    line-height: 21px;
+    margin-left: 15px;
+    text-decoration: none;
+    display: flex;
+    cursor: pointer;
+    transition: color .2s ease;
+    margin: 0;
 }

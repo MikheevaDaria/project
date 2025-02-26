@@ -82,11 +82,11 @@
   height: 100%;
 }
 
-.about__wrap-left {
+.number__wrap-left {
 flex-shrink: 0;
 }
 
-.about__wrap-right {
+.number__wrap-right {
   flex-direction: column;
   display: flex;
   font-family: Arial, sans-serif;
@@ -156,4 +156,22 @@ margin-top: 15px;
   color: #6e6a6aaf;
  }
  
- 
+.booking__2 {
+  display: flex;
+  height: 700px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.booking__form{
+  color: #ccc;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: flex;
+    width: 50%;
+    height: 1600px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}

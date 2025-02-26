@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-   <header class="">
+   <header class="booking__1">
     <div class="header container">
         <a class="header__logo-wrap" href="index.html">
          <img class="logo__imege" src="images/logo.jpg" alt="logo" width="100" height="110">
@@ -36,15 +36,15 @@
                             </li>
                     
                             <li class="menu__item menu__item">
-                                <a class="menu__link" href="#rooms">НОМЕРА И ЦЕНЫ</a>
+                                <a class="menu__link" href="index.html#rooms">НОМЕРА И ЦЕНЫ</a>
                             </li>
                         
                             <li class="menu__item menu__item">
-                                <a class="menu__link" href="info0">СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ</a>
+                                <a class="menu__link" href="index.html#info0">СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ</a>
                             </li>
                     
                             <li class="menu__item menu__item">
-                                <a class="menu__link" href="#footer">КОНТАКТЫ</a>
+                                <a class="menu__link" href="index.html#footer">КОНТАКТЫ</a>
                             </li>       
 
                             <li class="menu__item menu__item">
@@ -57,30 +57,32 @@
         </div>
     </div>
     </header>
-    <main class="main">
+    <main class="main container">
         <img src="images/shapka.jpg" alt="фото под шапку"  width="1500" height="800">
-        <h2>Форма бронирования</h2>
-            <form id="bookingForm">
-                <label for="date">Дата бронирования:</label>
-                    <input type="date" id="date" name="date" required>
+            <div class="booking__2">
+                <h2>Форма бронирования</h2>
+                    <form class="booking__form" id="bookingForm">
+                        <label form="date">Дата бронирования:</label>
+                            <input type="date" id="date" name="date" required>
 
-                <label for="date">Дата выезда:</label>
-                    <input type="date__all" id="date__all" name="date__all" required>
+                        <label form="date__all">Дата выезда:</label>
+                            <input type="date" id="date__all" name="date__all" required>
 
-                <label for="time">Время бронирования:</label>
-                    <input type="time" id="time" name="time" required>
+                        <label form="time">Время бронирования:</label>
+                            <input type="time" id="time" name="time" required>
 
-                <label for="adults">Количество человек:</label>
-                    <input type="number" id="adults" name="adults" min="1" required>
+                        <label form="adults">Количество человек:</label>
+                            <input type="number" id="adults" name="adults" min="1" required>
 
-                <label for="children">Будут ли дети:</label>
-                    <select id="children" name="children">
-                <option value="yes">Да</option>
-                <option value="no">Нет</option>
-                    </select>
+                        <label form="children">Будут ли дети:</label>
+                            <select id="children" name="children">
+                        <option value="yes">Да</option>
+                        <option value="no">Нет</option>
+                            </select>
 
-        <button type="submit">Забронировать</button>
-            </form>
+                        <button type="submit">Забронировать</button>
+                    </form>
+            </div>
     </main>
     <script>
         document.getElementById('bookingForm').addEventListener('submit', function(event) {
@@ -95,29 +97,45 @@
             alert(`Бронирование подтверждено!\\nДата: ${date}\\nДата выезда: ${date__all}\\nВремя: ${time}\\nКоличество человек: ${adults}\\nДети: ${children}`);
         });
     </script>    
-    <footer class="footer">
-        <div class="info">
-            <p class="info__address">ООО"..." Физический адрес</p>
-            <p class="info__phone">номер телефона 66-66-66</p>
-            <p class="info__mail">электронная почта</p>
-        </div>
-        <div class="socials">
-            <h4 class="socials__title">социальные сети</h4>
-            <a class="socials__link" href="https://www.instagram.com/dary_dolly_a?igsh=MXM1dnh5ZGw4Nnc5Nw=="><img class="socials__icon" src="images/inst.jpg" alt="фото инст" width="250" height="250"></a>
-            <a class="socials__link" href="https://www.instagram.com/nvllstt/profilecard/?igsh=MTd0bGp5eXRxNm5jZA"><img class="socials__icon" src="images/inst.jpg" alt="фото инст" width="250" height="250"></a>
+    <footer class="footer container" id="footer">
+        <div class="contacts__container">
+            <h2 class="contacts__title">
+                <a class="link link_unstyled">Контакты</a>
+            </h2>
+            <div class="info__footer">
+                <div class="contacts__item">
+                    <img class="info__photo" src="images/location.jfif" alt="адрес" width="60" height="60">
+                    <p class="info__address">Piazza della Repubblica, 17
+                        20124 Milano MI
+                        Italy</p>
+                </div>
+                <div class="massenger__list">
+                    <div class="contacts__item">
+                            <img class="info__photo" src="images/phone.jfif" alt="телефон" width="60" height="60">
+                            <p class="info__address">66-66-66</p>
+                    </div>
+                    <div class="contacts__item">
+                        <img class="info__photo" src="images/whatsapp.jfif" alt="ватсап" width="60" height="60">
+                        <a class="socials__link"
+                            href="https://www.instagram.com/dary_dolly_a?igsh=MXM1dnh5ZGw4Nnc5Nw">WhatsApp: 66-66-66</a>
+                    </div>
+                    <div class="contacts__item">
+                        <img class="info__photo" src="images/instagram.jfif" alt="инстаграм" width="60" height="60">
+                        <a class="socials__link"
+                            href="https://www.instagram.com/nvllstt/profilecard/?igsh=MTd0bGp5eXRxNm5jZA">Instagram</a>
+                    </div>
+                </div>
+                <div class="contacts__item">
+                    <img class="info__photo" src="images/mail.jfif" alt="почта" width="60" height="60">
+                    <p class="info__mail">villaserenita@mail.com</p>
+                </div>
+                </div>
+            </div>
         </div>
     </footer>
-</body>
 </html>
 
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Форма бронирования отеля</title>
-</head>
-<body>
+
 
 
 
