@@ -31,25 +31,25 @@
                     <nav class="menu">
                         <ul class="menu__list">
                             <li>
-                            <li class="menu__item menu__item">
-                                <a class="menu__link" href="booking.html">БРОНИРОВАНИЕ</a>
-                            </li>
-                    
-                            <li class="menu__item menu__item">
-                                <a class="menu__link" href="#rooms">НОМЕРА И ЦЕНЫ</a>
-                            </li>
+                                <li class="menu__item menu__item">
+                                    <a class="menu__link" href="booking.html">БРОНИРОВАНИЕ</a>
+                                </li>
                         
-                            <li class="menu__item menu__item">
-                                <a class="menu__link" href="#info0">СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ</a>
-                            </li>
-                    
-                            <li class="menu__item menu__item">
-                                <a class="menu__link" href="#footer">КОНТАКТЫ</a>
-                            </li>       
-
-                            <li class="menu__item menu__item">
-                                <a class="menu__link" href="registration.html">ВХОД И РЕГИСТРАЦИЯ</a>
-                            </li> 
+                                <li class="menu__item menu__item">
+                                    <a class="menu__link" href="index.html#rooms">НОМЕРА И ЦЕНЫ</a>
+                                </li>
+                            
+                                <li class="menu__item menu__item">
+                                    <a class="menu__link" href="index.html#info0">СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ</a>
+                                </li>
+                        
+                                <li class="menu__item menu__item">
+                                    <a class="menu__link" href="index.html#footer">КОНТАКТЫ</a>
+                                </li>       
+    
+                                <li class="menu__item menu__item">
+                                    <a class="menu__link" href="registration.html">ВХОД И РЕГИСТРАЦИЯ</a>
+                                </li> 
                             </li>
                         </ul>
                     </nav>
@@ -60,43 +60,53 @@
  <main class="main container">
 <section>
     <img src="images/shapka.jpg" alt="фото под шапку"  width="1500" height="800">
-    <h2>Регистрация</h2>
-    <form action="/" method="post">
-        <input type="text" name="name" placeholder="Имя" required>
-        <input type="email" name="email" placeholder="Логин" required>
+        <div class="registration__2">
+            <h2>Регистрация</h2>
+    <form class="registration__form" action="registration" method="post" id="registrationForm">
+        <input type="text" name="name" id="name" placeholder="Имя" required>
+        <input type="email" name="email" id="email" placeholder="Логин" required>
         <fieldset>
             <div>
-                <input type="password" name="password" placeholder="Пароль" required>
+                <input type="password" name="password" id="password" placeholder="Пароль" required>
                 <span>Минимум 8 символов</span>
             </div>
-            <input type="password" name="repeat-password" placeholder="Повторите пароль" required>
+            <div>
+            <input type="password" name="repeat_password" id="repeat_password" placeholder="Повторите пароль" required>
+            </div>
         </fieldset>
         <fieldset>
-            <input type="submit" value="Зарегистрироваться">
+            <input type="submit"  value="Зарегистрироваться">
             <button type="button">Отмена</button>
         </fieldset>
-        <button type="button">У меня уже есть аккаунт</button>
     </form>
-</section>
-<!--/ Форма "Регистрация" -->
-<!-- Форма "Войти" -->
-<section>
-    <button type="button"><img src="images/icon/close.svg" alt="Закрыть окно" width="24" height="24"></button>
-    <h2>Войти</h2>
-    <form action="/" method="post">
+        </div>
+    <div class="registration__2">
+            <h2>Войти</h2>
+    <form class="registration__form__1" action="registration" method="post">
         <input type="email" name="email" placeholder="Логин" required>
         <input type="password" name="password" placeholder="Пароль" required>
         <fieldset>
             <input type="submit" value="Войти">
             <button type="button">Отмена</button>
         </fieldset>
-        <button type="button">У меня еще нет аккаунта</button>
     </form>
+    </div>
 </section>
-<!--/ Форма "Войти" -->
 </div>
-<!--/ Формы -->
 </main>
+<script>
+    document.getElementById('registrationForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        const text = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const repeat_password = document.getElementById('repeat_password').value;
+        
+
+        alert(`Регистрация завершена!\\nИмя: ${text}\\nЛогин: ${email}`);
+    });
+</script> 
 <footer class="footer container" id="footer">
     <div class="contacts__container">
         <h2 class="contacts__title">
@@ -104,23 +114,23 @@
         </h2>
         <div class="info__footer">
             <div class="contacts__item">
-                <img class="info__photo" src="images/location.jfif" alt="адрес" width="60" height="60">
+                <img class="info__photo" src="images/location.JPEG" alt="адрес" width="60" height="60">
                 <p class="info__address">Piazza della Repubblica, 17
                     20124 Milano MI
                     Italy</p>
             </div>
             <div class="massenger__list">
                 <div class="contacts__item">
-                        <img class="info__photo" src="images/phone.jfif" alt="телефон" width="60" height="60">
+                        <img class="info__photo" src="images/phone.JPEG" alt="телефон" width="60" height="60">
                         <p class="info__address">66-66-66</p>
                 </div>
                 <div class="contacts__item">
-                    <img class="info__photo" src="images/whatsapp.jfif" alt="ватсап" width="60" height="60">
+                    <img class="info__photo" src="images/whatsapp.JPEG" alt="ватсап" width="60" height="60">
                     <a class="socials__link"
                         href="https://www.instagram.com/dary_dolly_a?igsh=MXM1dnh5ZGw4Nnc5Nw">WhatsApp: 66-66-66</a>
                 </div>
                 <div class="contacts__item">
-                    <img class="info__photo" src="images/instagram.jfif" alt="инстаграм" width="60" height="60">
+                    <img class="info__photo" src="images/instagram.JPEG" alt="инстаграм" width="60" height="60">
                     <a class="socials__link"
                         href="https://www.instagram.com/nvllstt/profilecard/?igsh=MTd0bGp5eXRxNm5jZA">Instagram</a>
                 </div>
