@@ -1,0 +1,32 @@
+/* Скрываем контент до загрузки */
+.content {
+    display: none;
+}
+
+/* Стили для прелоадера */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+    background: rgba(129, 125, 124, 0.253);
+    transition: opacity 0.5s ease;
+}
+
+.loader {
+    width: 60px;
+    height: 60px;
+
+    border: 8px solid #4b47499e;
+    border-top: 8px solid #81797c;
+    border-radius: 50%;
+
+    animation: spin 1s linear infinite;
+}

@@ -127,6 +127,10 @@ transition: transform 0.3s;
 position: relative;
 }
 
+.info__wrap {
+display: flex;
+}
+
 .info__text {
   margin-top: -250px; 
     color:  #0e0e0e;

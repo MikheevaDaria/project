@@ -132,25 +132,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Шаблонные строки и подстановки
             const card = `
-     <div class="info__places">
-                <img class="info__icon" src="images/place.jpg" alt="фото мест" width="400" height="350">
-                <a class="info__link" href="${linkUrl}">места, которые
-                    можно посетить в городе</a>
-                <div class="info__text" hidden>
-                    Сбросьте якорь в рутине!
-                    Забудьте о банальных туристических маршрутах и отправляйтесь в увлекательное путшествие по самым душевным и колоритным уголкам города!
-                    Создайте свою уникальную историю города!
-                </div>
-            </div>
-
-
-                <a class="card__item" href="${linkUrl}">
-                    <span class="card__icon">
-                        <img src="${iconUrl}" alt="${iconAlt}">
-                    </span>
-                    <h3 class="card__title">${title}</h3>
-                    <p class="card__description">${description}</p>
-                </a>
+                <div class="info__places">
+                    <img class="info__icon" src="${iconUrl}" alt="${iconAlt}" width="400" height="350">
+                    <a class="info__link" href="${linkUrl}">${title}</a>
+                    <div class="info__text" hidden>${description}</div>
+                </div>          
             `;
 
             return card;
@@ -178,6 +164,23 @@ document.addEventListener("DOMContentLoaded", () => {
             .catch(error => {
                 console.error('Ошибка при загрузке данных:', error);
             });
+    }
+
+    // Preloader страницы
+    const preloader = document.querySelector('.preloader');
+    const content = document.querySelector('.content');
+    if (preloader && content) {
+        setTimeout(() => {
+            // Скрываем прелоадер
+            preloader.style.opacity = '0';
+            preloader.style.visibility = 'hidden';
+
+            // Показываем контент
+            content.style.display = 'block';
+
+            // Удаляем элемент из DOM
+            preloader.remove();
+        }, 1000); // Задержка 3 секунды
     }
 
 });
