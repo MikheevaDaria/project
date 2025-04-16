@@ -183,4 +183,5 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 1000); // Задержка 3 секунды
     }
 
+    
 });

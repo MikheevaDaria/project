@@ -1,0 +1,11 @@
+body {
+    background-color: #aba5a5;
+}
+
+.number {
+    background-color: #cccccc00;
+display: flex;
+    gap: 10px;
+    color: black;
+    padding: 40px;
+}

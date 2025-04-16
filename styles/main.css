@@ -28,12 +28,14 @@
   color: rgb(var(--color-text-additional))
 }
 .rooms__container {
-  max-width: 1180px;
   min-width: 320px;
   margin: 0 auto;
   padding: 52px 0;
   text-align: center;
   background-color: #291d2100;
+}
+.swiper .rooms__container {
+  margin: 0;
 }
 .rooms__title {
   color: rgba(33, 34, 34, 0.938);
@@ -196,7 +198,7 @@ margin-top: 35px;
     justify-content: space-between;
 }
 
-.registration__2 {
+.registration__2{
   display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -224,4 +226,12 @@ margin-top: 35px;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-around;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #383633;
+}
+
+.swiper-pagination-bullet-active {
+  background: #000000;
 }
