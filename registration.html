@@ -6,6 +6,7 @@
     <title>Villa Serenità, г. Милан - официальный сайт</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/registration.css">
 </head>
 <body>
    <header class="">
@@ -63,8 +64,8 @@
         <div class="registration__2">
             <h2>Регистрация</h2>
     <form class="registration__form" action="registration" method="post" id="registrationForm">
-        <input type="text" name="name" id="name" placeholder="Имя" required>
-        <input type="email" name="email" id="email" placeholder="Логин" required>
+        <input type="name" name="name" id="name" placeholder="Имя" required>
+        <input type="email" name="email" id="email" placeholder="Почта" required>
         <fieldset>
             <div>
                 <input type="password" name="password" id="password" placeholder="Пароль" required>
@@ -75,18 +76,18 @@
             </div>
         </fieldset>
         <fieldset>
-            <input type="submit"  value="Зарегистрироваться">
+            <button type="submit">Зарегистрироваться</button>
             <button type="button">Отмена</button>
         </fieldset>
     </form>
         </div>
     <div class="registration__2">
             <h2>Войти</h2>
-    <form class="registration__form__1" action="registration" method="post">
-        <input type="email" name="email" placeholder="Логин" required>
+    <form class="registration__form__1" action="registration" method="post" id="loginForm">
+        <input type="email" name="email" placeholder="email" required>
         <input type="password" name="password" placeholder="Пароль" required>
         <fieldset>
-            <input type="submit" value="Войти">
+            <button type="submit">Войти</button>
             <button type="button">Отмена</button>
         </fieldset>
     </form>
@@ -98,13 +99,28 @@
     document.getElementById('registrationForm').addEventListener('submit', function(event) {
         event.preventDefault();
         
-        const text = document.getElementById('name').value;
+        const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
         const password = document.getElementById('password').value;
         const repeat_password = document.getElementById('repeat_password').value;
-        
+        if(password === repeat_password && password && name && email) {
+            const registrationsData = {
+                name: name,
+                email:email,
+                password: password,
+            }
+            window.localStorage.setItem("registrations_data", JSON.stringify(registrationsData));
+            alert(`Регистрация завершена! Данные запишутся в localStorage\nИмя: ${name}\nЛогин: ${email}`);
+            
+        } else {
+            alert(`Ошибка регистрации! Введите необходимые данные!`);
+        }        
+    });
 
-        alert(`Регистрация завершена!\\nИмя: ${text}\\nЛогин: ${email}`);
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert(`Вход выполнен!`);
+        window.location.replace('index.html');
     });
 </script> 
 <footer class="footer container" id="footer">

@@ -1,0 +1,19 @@
+body {
+    background-color: #aba5a5;
+}
+
+.registration__form {
+    background-color: #cccccc00;
+display: flex;
+    gap: 10px;
+    color: black;
+    padding:0 40px;
+}
+
+.registration__form__1 {
+    background-color: #cccccc00;
+display: flex;
+    gap: 10px;
+    color: black;
+    padding:0 40px;
+}

@@ -185,8 +185,20 @@
             const time = document.getElementById('time').value;
             const adults = document.getElementById('adults').value;
             const children = document.getElementById('children').value;
-    
-            alert(`Бронирование подтверждено!\\nДата: ${date}\\nДата выезда: ${date__all}\\nВремя: ${time}\\nКоличество человек: ${adults}\\nДети: ${children}`);
+            if(date && date__all && time && adults && children) {
+            const bookingsData = {
+                date: date,
+                date__all: date__all,
+                time: time,
+                adults: adults,
+                children: children,
+            }
+            window.localStorage.setItem("bookings_data", JSON.stringify(bookingsData));
+            alert(`Бронирование подтверждено! Данные запишутся в localStorage\nДата: ${date}\nДата выезда: ${date__all}\nВремя: ${time}\nКоличество человек: ${adults}\nДети: ${children}`);  
+        } else {
+            alert(`Ошибка бронирования! Введите необходимые данные!`);
+        }
+
         });
     </script>    
     <footer class="footer container" id="footer">

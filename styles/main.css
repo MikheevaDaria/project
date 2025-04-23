@@ -24,13 +24,11 @@
   background-position: center
 }
 .rooms_style_complementary {
-  background-color: #a79ca082;
   color: rgb(var(--color-text-additional))
 }
 .rooms__container {
   min-width: 320px;
   margin: 0 auto;
-  padding: 52px 0;
   text-align: center;
   background-color: #291d2100;
 }
@@ -40,8 +38,7 @@
 .rooms__title {
   color: rgba(33, 34, 34, 0.938);
   text-align: left;
-  margin-bottom: 47px;
-  padding: 0 15px
+  padding: 0 45px
 }
 .link {
   color: rgb(var(--color-bg-buttons));
@@ -185,10 +182,11 @@ margin-top: 35px;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    padding: 50px;
 }
 
 .booking__form{
-  color: #ccc;
+  color: black;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   display: flex;
     width: 50%;
